@@ -1,12 +1,17 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ReniecEmpleados_ADO
 {
-    public class ConexionADO
+    internal class ConexionADO
     {
         public string GetCnx()
         {
-            string strCnx = ConfigurationManager.ConnectionStrings["Empleados"].ConnectionString;
+            string strCnx = ConfigurationManager.ConnectionStrings["ReniecEmpleados"].ConnectionString;
             if (object.ReferenceEquals(strCnx, string.Empty))
             {
                 return string.Empty;
