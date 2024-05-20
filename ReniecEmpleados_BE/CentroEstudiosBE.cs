@@ -10,11 +10,13 @@ namespace ReniecEmpleados_BE
     {
         public String Id_Cestudio { get; set; }
         public String Des_Cestudio { get; set; }
-        public Int16 Tip_Cestudio { get; set; }
+        public String Tip_Cestudio { get; set; }
         public DateTime Fecha_registro { get; set; }
         public String Usuario_registro { get; set; }
         public DateTime Fecha_Ult_Modif {get;set;}
         public String Usuario_Ult_Modif { get; set; }
         public Int16 Estado_Cestudio { get; set; }
+        public String direccion { get; set; }
+        public String Id_Ubigeo { get; set; }
     }
 }
