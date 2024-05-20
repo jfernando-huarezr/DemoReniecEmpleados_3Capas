@@ -34,6 +34,8 @@ namespace ReniecEmpleados_ADO
             } catch (SqlException ex)
             {
                 throw new Exception(ex.Message);
+
+
             }
         }
     }
