@@ -11,7 +11,7 @@ namespace ReniecEmpleados_ADO
     {
         public string GetCnx()
         {
-            string strCnx = ConfigurationManager.ConnectionStrings["ReniecEmpleados"].ConnectionString;
+            string strCnx = ConfigurationManager.ConnectionStrings["Reniec"].ConnectionString;
             if (object.ReferenceEquals(strCnx, string.Empty))
             {
                 return string.Empty;

@@ -1,4 +1,4 @@
-namespace ReniecEmpleados_GUI
+namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {

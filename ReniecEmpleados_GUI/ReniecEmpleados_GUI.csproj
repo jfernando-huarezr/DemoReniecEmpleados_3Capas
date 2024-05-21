@@ -13,4 +13,10 @@
     <ProjectReference Include="..\ReniecEmpleados_BL\ReniecEmpleados_BL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="CentroEstudiosMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
