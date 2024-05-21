@@ -29,8 +29,8 @@ namespace ReniecEmpleados_GUI
         {
             dtv = new DataView(objContratoBL.ListarContrato());
             dtv.RowFilter = "Nom_emp like '%" + strFiltro + "%'";
-            dtgContratos.DataSource = dtv;
-            lblRegistros.Text = dtgContratos.Rows.Count.ToString();
+            dtgData.DataSource = dtv;
+            lblRegistros.Text = dtgData.Rows.Count.ToString();
         }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)

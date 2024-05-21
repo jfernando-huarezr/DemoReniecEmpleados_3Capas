@@ -30,14 +30,14 @@
         {
             label1 = new Label();
             txtFiltro = new TextBox();
-            dtgContratos = new DataGridView();
+            dtgData = new DataGridView();
             label2 = new Label();
             lblRegistros = new Label();
             btnAgregar = new Button();
             btnActualizar = new Button();
             btnEliminar = new Button();
             btnCerrar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dtgContratos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgData).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -55,15 +55,16 @@
             txtFiltro.Name = "txtFiltro";
             txtFiltro.Size = new Size(357, 27);
             txtFiltro.TabIndex = 1;
+            txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
-            // dtgContratos
+            // dtgData
             // 
-            dtgContratos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgContratos.Location = new Point(12, 78);
-            dtgContratos.Name = "dtgContratos";
-            dtgContratos.RowHeadersWidth = 51;
-            dtgContratos.Size = new Size(1113, 460);
-            dtgContratos.TabIndex = 2;
+            dtgData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgData.Location = new Point(12, 78);
+            dtgData.Name = "dtgData";
+            dtgData.RowHeadersWidth = 51;
+            dtgData.Size = new Size(1113, 460);
+            dtgData.TabIndex = 2;
             // 
             // label2
             // 
@@ -131,7 +132,7 @@
             Controls.Add(btnAgregar);
             Controls.Add(lblRegistros);
             Controls.Add(label2);
-            Controls.Add(dtgContratos);
+            Controls.Add(dtgData);
             Controls.Add(txtFiltro);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -139,7 +140,8 @@
             Name = "CentroEstudiosMan01";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mantenimiento de Centro de Estudios";
-            ((System.ComponentModel.ISupportInitialize)dtgContratos).EndInit();
+            Load += CentroEstudiosMan01_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgData).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -148,7 +150,7 @@
 
         private Label label1;
         private TextBox txtFiltro;
-        private DataGridView dtgContratos;
+        private DataGridView dtgData;
         private Label label2;
         private Label lblRegistros;
         private Button btnAgregar;
